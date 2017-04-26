@@ -19,6 +19,10 @@ nav.navi-options{
     text-align: center;
 }
 
+body.bd-main{
+	padding-top: 20px;
+}
+
 #nav-border{
 	border-bottom: 0px;
     margin-top: 0px;
@@ -42,6 +46,14 @@ nav.navi-options{
     left: 0;
     bottom: 0;
     z-index: 1;
+}
+
+#port-gallery{
+	max-width: 72em;
+	margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
 }
 
 a.close-text{
@@ -100,6 +112,45 @@ p.footer{
 	text-align: center;
 	width: auto;
 }
+
+p.thumb{
+	color: #2a2a2a;
+	display: inline-block;
+	font-size: 12px;
+	height: auto;
+	line-height: 15px;
+	margin: 10px 0 10px 10px;
+	position: relative;
+	text-align: center;
+	width: auto;
+	font-weight: bold;
+}
+
+p.thumb-dev{
+	color: #a4a4a4;
+	display: inline-block;
+	font-size: 10px;
+	height: auto;
+	line-height: 15px;
+	margin: 10px 10px 10px 10px;
+	position: relative;
+	text-align: center;
+	width: auto;
+	float: right;
+}
+
+p.thumb-desc{
+	color: #2a2a2a;
+	display: inline-block;
+	font-size: 8px;
+	height: auto;
+	line-height: 15px;
+	margin: 10px 0 10px 10px;
+	position: relative;
+	text-align: left;
+	width: auto;
+}
+
 
 p.side-nav-desc{
 	text-align: center;
