@@ -11,6 +11,9 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="css/main.css" />
 
+    <!-- Custom CSS -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -18,17 +21,100 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body background="img/main_bg.jpg">
+  <body>
 
-  	<div class="page-header" id="nav-border">
-  		<h1 class="title"> Japhet Lee D. Ong</h1>
-  		<small id="job-desc"> Android/iOS Developer </small>
-  	</div>
 
+    <div id="wrapper">
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+        	<a href="#menu-close" class="close-text" id="menu-close">X</a>
+        	<h2 class="side-nav">About Me</h2>
+        	<p class="side-nav-desc"> I am Japhet Lee Diaz Ong, an android/iOS Developer from the Philippines. My main focus is to learn more about mobile development both for Android and iOS. I am highly skilled on Native development on both Android and iOS namely Android Studio and Xcode respectively. With knowledge in PHP primarily CakePHP Framework and MySQL database, I am able to create the necessary API's needed for Mobile App Development.</p>
+        	<h3 class="side-nav">Skills</h3>
+        	<p class="side-nav-skill">Android (Java)</p>
+        	<div class="progress">
+  				<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="70"
+				  aria-valuemin="0" aria-valuemax="100" style="width:85%">
+				</div>
+			</div>
+			<p class="side-nav-skill">iOS (Swift)</p>
+        	<div class="progress">
+  				<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="70"
+				  aria-valuemin="0" aria-valuemax="100" style="width:90%">
+				</div>
+			</div>
+			<p class="side-nav-skill">CakePHP</p>
+        	<div class="progress">
+  				<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="70"
+				  aria-valuemin="0" aria-valuemax="100" style="width:65%">
+				</div>
+			</div>
+			<p class="side-nav-skill">Database Management</p>
+        	<div class="progress">
+  				<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="70"
+				  aria-valuemin="0" aria-valuemax="100" style="width:70%">
+				</div>
+			</div>
+			<p class="side-nav-skill">Wireframing</p>
+        	<div class="progress">
+  				<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="70"
+				  aria-valuemin="0" aria-valuemax="100" style="width:80%">
+				</div>
+			</div>
+
+			<a href="http://stackoverflow.com/users/3739502/jlong">
+				<center class="so-flair"><img src="http://stackoverflow.com/users/flair/3739502.png?theme=dark" width="208" height="58" align="middle" alt="profile for JLONG at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for JLONG at Stack Overflow, Q&amp;A for professional and enthusiast programmers"></center>
+			</a>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+		  	<div class="page-header" id="nav-border">
+		  		<h1 class="title"> Japhet Lee D. Ong</h1>
+		  		<nav class="navi-options">
+		  			<a href="#menu-toggle" class="about-me" id="menu-toggle">About Me</a>
+		  			 | 
+		   
+		  			<a href="#sidr" class="about-me" target="_blank">Resume</a>
+
+		  		</nav>
+		  		<small id="job-desc"> Android / iOS Developer </small>
+		  	</div>
+
+		  	<div id="contact-me">
+    	
+    			<a href="mailto:japhetlee.dev@gmail.com" class="footer">japhetlee.dev@gmail.com</a> <p class="footer"> \ +63 916 404 9399 \ </p> <a href="https://ph.linkedin.com/in/japhet-lee-ong-6292ba10b" class="footer" target="_blank"> LinkedIn \</a> <a href="http://stackoverflow.com/users/3739502/jlong" class="footer" target="_blank"> StackOverflow </a>
+
+
+    		</div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
+    <script>
+    	$("#menu-close").click(function(e){
+    		e.preventDefault();
+        	$("#wrapper").toggleClass("toggled");
+    	});
+    </script>
+
   </body>
 </html>
