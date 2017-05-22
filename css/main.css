@@ -170,3 +170,19 @@ p.side-nav-skill{
 	margin-right: 10px;
     margin-left: 10px;
 }
+
+.img-responsive-modal {
+	float: left;
+    width:20%; /* This value will depend on what size you want for your loading image, let's say it's 50px */
+    height: 20%;
+    padding-right: 10px;
+}
+
+.modal-skills{
+	float: left;
+	padding-right: 10px;
+}
+
+.gplay-modal{
+	width: 15%;
+}
