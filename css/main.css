@@ -89,6 +89,36 @@ div.auto-height{
 	height:  3100px;
 }
 
+@media only screen and (min-width: 1641px) {
+  #project-section{
+    height:  3100px;
+  }
+}
+
+@media only screen and (max-width: 1640px) {
+  #project-section{
+    height:  4100px;
+  }
+}
+
+@media only screen and (max-width: 1410px) {
+  #project-section{
+    height:  5100px;
+  }
+}
+
+@media only screen and (max-width: 1096px) {
+  #project-section{
+    height:  6100px;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  #project-section{
+    height:  9100px;
+  }
+}
+
 .btn-about-me {
     background: #000;
     color: #fff;
@@ -211,6 +241,7 @@ div.auto-height{
 
 html {
     scroll-behavior: smooth;
+    width: 100%;
 }
 
 .fa {
