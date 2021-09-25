@@ -95,9 +95,15 @@ div.auto-height{
   }
 }
 
-@media only screen and (max-width: 1640px) {
+@media only screen and (max-width: 1753px) {
   #project-section{
     height:  4100px;
+  }
+}
+
+@media only screen and (max-width: 1640px) {
+  #project-section{
+    height:  4500px;
   }
 }
 
